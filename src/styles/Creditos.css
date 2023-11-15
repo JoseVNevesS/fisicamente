@@ -1,0 +1,39 @@
+.bgCreditos {
+    background-color: black;
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerCreditos {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.mainTitleContainer {
+    margin-bottom: 10px;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+}
+
+.namesContainerCreditos {
+    margin-bottom: 50px;
+}
+
+.buttonContainerCreditos {
+    display: flex;
+    justify-content: end;
+}
+
+.buttonContainerCreditos > button {
+    background-color: transparent;
+    color: white;
+}

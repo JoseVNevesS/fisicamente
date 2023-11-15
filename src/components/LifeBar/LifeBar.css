@@ -1,0 +1,48 @@
+.containerLifeBar {
+    position: relative;
+    background-color: #2d2d2d;
+    width: 100%;
+
+    /* padding: 20px; */
+    margin: 20px;
+    border-radius: 10px;
+
+    /* background-color: #00dd55; */
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.life{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+}
+
+.lifeBarTitle {
+    background-color: #00dd55;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.lifeBarTitle p {
+    font-weight: bold;
+    padding: 5px;
+    font-style: italic;
+    margin: 0;
+}
+
+.lifeBarBody {
+    padding: 0 30px 30px 30px;
+}
+
+.lifeBarBody p {
+    font-weight: bold;
+    color: #fff;
+    position: "absolute";
+}

@@ -1,0 +1,93 @@
+html, 
+body{
+  overflow: hidden;
+}
+
+.jogo {
+  background-color: black;
+  background-image:
+    url('../../public/bg/selectFasesBg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#preloader{
+  background: #000 url(../assets/preloader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.fase {
+  border: 2px solid #333;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ddd;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fase.locked {
+  background-color: #ccc;
+}
+
+.fase.locked img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.nomeFisicoSelect {
+  color: white
+}
+
+@media (max-width: 3000px){
+  .jogo{
+    gap: 2%;
+  }
+}
+
+@media (max-width: 900px){
+  .jogo{
+    gap: 0;
+  }
+}
+
+@media (max-width: 373px){
+
+  .jogo{
+    gap: 0%;
+  }
+
+  .btnFase{
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 323px){
+
+  .btnFase{
+    width: 120px;
+    transform: scale(0.6);
+  }
+}
+
+.btnAbrirTutorial {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background-color: transparent;
+  color: white;
+}

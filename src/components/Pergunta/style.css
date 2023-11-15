@@ -1,0 +1,357 @@
+.area-jogo {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    overflow-y: auto;
+
+}
+
+/* inicio container vilao */
+
+.container-vilao-posicao {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.vida-inimigo-area {
+    position: relative;
+    width: 100%;
+}
+
+.nome-vilao {
+    position: absolute;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.container-vilao {
+    width: 640px;
+    height: 290px;
+    background-color: #2d2d2dc9;
+    border-radius: 0px 0 15px 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pergunta-vilao-area {
+    display: flex;
+    min-height: 239px;
+    max-height: 239px;
+    flex: 1;
+}
+
+.pergunta-vilao {
+    padding: 0 10px;
+    width: 60%;
+    display: flex;
+    flex: 1;
+}
+
+.pergunta-vilao-texto {
+    color: white;
+    overflow-y: auto;
+}
+
+.porta-retrato-vilao-posicao {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 40%;
+}
+
+.porta-retrato {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #e5ebb2;
+    overflow: hidden;
+}
+
+.porta-retrato-vilao-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+}
+
+.imagem-fisico {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 15%;
+    left: 0;
+    z-index: 1;
+}
+
+/* fim do container vilao */
+
+/* inicio container heroi */
+
+.container-heroi-posicao {
+    position: fixed;
+    display: flex;
+    width: 95%;
+    bottom: 3%;
+    left: 3%;
+    margin-bottom: 20px;
+}
+
+.container-heroi {
+    width: 800px;
+    min-height: 290px;
+    background-color: #2d2d2dc9;
+    border-radius: 0px 0 15px 15px;
+}
+
+.vida-heroi-area {
+    position: relative;
+    width: 100%;
+}
+
+.nome-heroi {
+    position: absolute;
+    margin-left: 10px;
+    z-index: 2;
+}
+
+.alternativas-heroi-posicao {
+    display: flex;
+}
+
+.imagem-heroi {
+    width: 200px;
+    height: 200px;
+}
+
+.alternativas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.botao {
+    background-color: #dfbc67;
+    width: 90%;
+    border: none;
+    padding: 7px 10px;
+    margin: 5px;
+    border-radius: 0px 10px 10px 10px;
+    transition: 0.2s;
+    text-align: justify;
+    word-spacing: -2px;
+}
+
+.botao:hover {
+    background-color: #00a13e;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/* fim container heroi */
+
+.cronometro {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.cronometro-content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; */
+}
+
+.cronometro img {
+    /* width: 75px;
+    height: auto; */
+}
+
+.cronometro-text {
+    /* margin-top: -60%;
+    margin-left: -4%; */
+}
+
+@media (max-width: 1250px) {
+
+    .container-vilao {
+        width: 95%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .container-heroi-posicao {
+        position: static;
+        width: 95.1%;
+    }
+
+    .container-heroi {
+        width: 95%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .pergunta-vilao-area{
+        min-height: 178px;
+        max-height: 182px;
+    }
+
+    .porta-retrato{
+        width: 150px;
+        height: 150px;
+    }
+
+    .porta-retrato-vilao-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .imagem-fisico{
+        width: 150px;
+        height: 130px;
+    }
+
+    .alternativas-heroi-posicao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-heroi {
+        width: 150px;
+        height: 150px;
+    }
+
+    .alternativas {
+        justify-content: initial;
+        padding-bottom: 20px;
+    }
+
+    .botao {
+        width: 85%;
+        margin: 5px auto;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .pergunta-vilao-area{
+        min-height: 160px;
+        max-height: 160px;
+    }
+
+    .pergunta-vilao-texto{
+        font-size: 11px;
+    }
+        
+    .porta-retrato{
+        width: 120px;
+        height: 120px;
+    }
+
+    .porta-retrato-vilao-img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .imagem-fisico{
+        width: 120px;
+        height: 90px;
+    }
+
+    .imagem-heroi {
+        width: 120px;
+        height: 120px;
+    }
+
+    .botao {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 370px){
+
+    .pergunta-vilao-area{
+        min-height: 133px;
+        max-height: 133px;
+    }
+
+    .pergunta-vilao-texto{
+        font-size: 9px;
+    }
+
+    .porta-retrato{
+        width: 100px;
+        height: 100px;
+    }
+
+    .porta-retrato-vilao-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .imagem-fisico{
+        width: 100px;
+        height: 80px;
+    }
+
+    .imagem-heroi {
+        width: 100px;
+        height: 100px;
+    }
+
+    .botao {
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width: 332px){
+
+    .pergunta-vilao-area{
+        max-height: 110px;
+    }
+
+    .pergunta-vilao-texto{
+        font-size: 7px;
+    }
+
+    .porta-retrato{
+        width: 80px;
+        height: 80px;
+    }
+
+    .porta-retrato-vilao-img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .imagem-fisico{
+        width: 80px;
+        height: 70px;
+    }
+
+    .imagem-heroi {
+        width: 80px;
+        height: 80px;
+    }
+
+    .botao {
+        font-size: 7px;
+    }
+}
